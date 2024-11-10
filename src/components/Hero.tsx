@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import styles from '../styles/hero.module.css';
 import img1 from "@/public/images/syedpic.jpg"
+import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -10,7 +11,7 @@ const Hero = () => {
         <div className={styles.textSection}>
           <h1 className={styles.title}>Hi, I am Syed Humza</h1>
           <p className={styles.subtitle}>I am a Web Developer specializing in creating beautiful and functional web applications.</p>
-          <a href="#projects" className={styles.ctaButton}>See My Work</a>
+          <Link href="#projects" className={styles.ctaButton}>See My Work</Link>
         </div>
         
         <div className={styles.imageContainer}>

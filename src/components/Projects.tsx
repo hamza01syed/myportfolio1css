@@ -1,4 +1,5 @@
 // components/Projects.tsx
+import Link from 'next/link';
 import styles from '../styles/projects.module.css';
 
 const projects = [
@@ -41,8 +42,8 @@ const Projects = () => {
                 ))}
               </div>
               <div className={styles.projectLinks}>
-                <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className={styles.linkButton}>Live Demo</a>
-                <a href={project.codeLink} target="_blank" rel="noopener noreferrer" className={styles.linkButton}>GitHub Code</a>
+                <Link href={project.liveLink} target="_blank" rel="noopener noreferrer" className={styles.linkButton}>Live Demo</Link>
+                <Link href={project.codeLink} target="_blank" rel="noopener noreferrer" className={styles.linkButton}>GitHub Code</Link>
               </div>
             </div>
           ))}
