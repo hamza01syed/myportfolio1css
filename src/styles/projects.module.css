@@ -1,0 +1,103 @@
+/* projects.module.css */
+.projects {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #222;
+  }
+  
+  .projectList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .projectCard {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .projectCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .projectTitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #f0a500;
+  }
+  
+  .projectDescription {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+  .techStack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .techBadge {
+    background-color: #f0f0f0;
+    color: #666;
+    font-size: 0.85rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+  }
+  
+  .projectLinks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  .linkButton {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #f0a500;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .linkButton:hover {
+    background-color: #d18b00;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .projectList {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .projectCard {
+      width: 100%;
+    }
+   
+  }
+  
